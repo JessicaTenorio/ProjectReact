@@ -13,16 +13,6 @@ class Container extends React.Component{
         }
     }
 
-    /*render(){
-        if(this.state.loading) return <p>Cargando</p>
-    }*/
-
-    /*componentDidMount(){
-        this.setState(state=>({
-            loading : !state.loading
-        }))
-    }*/
-
     componentDidMount(){
         getCharacters().then(res=>{
             this.setState({loading:false, results:res});          
@@ -44,12 +34,7 @@ class Container extends React.Component{
             </div>
         );
     }
-
-       /* return <React.Fragment>
-            {
-                this.state.loading ? <p>Cargando</p> : <p>Ya cargó</p>
-            }
-        </React.Fragment>*/
+     
 }
 
 export default Container;

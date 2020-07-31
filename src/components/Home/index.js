@@ -12,30 +12,21 @@ class Home extends React.Component {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to={{
-                            pathname: '/character',
-                            index: 'React'
-                        }}>Characters</Link>
+                        <Link to="/character">Characters</Link>
                     </li>
                     <li>
                         <Link to={{
                             pathname: '/about',
                             name: 'Jessica'
                         }}>About</Link>
-                    </li> 
-                    <li>
-                        <Link to="/character/1">character 1</Link>
-                    </li>       
-                    <li>
-                        <Link to="/character/2">character 2</Link>
-                    </li>             
+                    </li>                            
                 </ul>
             </nav>
             <Switch>
             <Route exact path="/" />
-            <Route exact  path="/character"  component={Container} />
-            <Route path="/character/:charId"  component={CardDetail} />
-            <Route path="/about" exact component={About} />
+            <Route exact  path="/character" component={Container} />
+            <Route path="/character/:charId" component={CardDetail} />
+            <Route exact path="/about" component={About} />
             <Route path="*" component={NotFound} />
             </Switch>
         </div>)

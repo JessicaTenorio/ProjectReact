@@ -13,16 +13,4 @@ export const getCharacters = async () => {
     }
 }
 
-/*fetch('https://rickandmortyapi.com/api/character/')
-.then(res=>res.json()
-.then(
-   ({results}) => {
-       //console.log(result);
-       this.setState({loading:false, results})
-   },
-   (error) =>{
-       this.setState({loading:false, error:true})
-       console.log(error);
-   }
-))*/
 
