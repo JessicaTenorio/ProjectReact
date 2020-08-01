@@ -1,12 +1,23 @@
-.CardDetail-div {
+.CardDetail-container {
+    height: 100%;
     padding-top: 50px;
-    margin-left: 50%;
-    background-color: blue;
+    background-color: rgb(88, 88, 105);
 }
 
-.CardDetail-link {
-    padding-top: 50px;
-    width: 100%;
-    background-color: black;
-    
+.CardDetail-div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: rgb(255, 221, 146);
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: rgb(201, 120, 0);
+    border-style: groove;
+    border-width: 10px;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.CardDetail-info {
+    padding: 20px;
 }
