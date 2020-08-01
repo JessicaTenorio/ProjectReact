@@ -4,6 +4,7 @@ import CardDetail from '../CardDetail';
 import Home from '../Home';
 import './NavBar.css'
 import { Link, Route, Switch } from "react-router-dom";
+import notfound from '../../resources/404Notfound.png'
 
 class NavBar extends React.Component {
     render(){
@@ -41,14 +42,15 @@ const About = (props) => {
     const {location} = props;
     return(
     <div>
-        <h2>About {location.name}</h2>
+        <p>{location.name}</p>
+        <p>Developer</p>
     </div>
 )};
 
 
 const NotFound = () => (
     <div>
-        <h2>Not found</h2>
+       <img className="NavBar-img" src={notfound} alt="notfound" ></img>
     </div>
 );
 
