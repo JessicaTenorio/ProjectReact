@@ -1,0 +1,31 @@
+.NavBar-header {
+    padding: 0;
+    min-height: 40px;
+    width: 100%;
+    background-color: black;
+    font-size: 3rem;
+}
+
+.NavBar-button {
+    padding: 0;
+    width: 100%;
+}
+
+.NavBar-button-li {
+    display: inline;
+}
+
+.NavBar-button-li-a {
+    font-family: Arial;
+    font-size: 1rem;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    color: #fff;
+}
+
+.NavBar-button-li-a:hover {
+    background-color:gray;
+    margin-top: -2;
+    padding-bottom: 12px;
+}

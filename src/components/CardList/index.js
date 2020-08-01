@@ -3,7 +3,7 @@ import Card from "../Card";
 import {getCharacters} from "../../services"
 
 
-class Container extends React.Component{
+class CardList extends React.Component{
     constructor(props){
         super(props);
         this.state = {            
@@ -25,7 +25,7 @@ class Container extends React.Component{
  
         if(loading) return <p>Cargando</p>
         return(
-            <div className="container">
+            <div>
                 {
                 results.length ? results.map((item,index)=>(                  
                     <Card key={index} item={item}/>
@@ -37,4 +37,4 @@ class Container extends React.Component{
      
 }
 
-export default Container;
+export default CardList;

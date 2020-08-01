@@ -1,4 +1,12 @@
 .CardDetail-div {
     padding-top: 50px;
+    margin-left: 50%;
+    background-color: blue;
+}
+
+.CardDetail-link {
+    padding-top: 50px;
     width: 100%;
+    background-color: black;
+    
 }
