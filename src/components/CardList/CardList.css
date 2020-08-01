@@ -1,7 +1,7 @@
 .CardList-container {
     display: flex;
     flex-wrap: wrap;
-    
+    background-color: black;
 }
 
 .CardList-img{
@@ -10,5 +10,4 @@
     height: auto;
     position: absolute;
     z-index: -1;
-    
 }
