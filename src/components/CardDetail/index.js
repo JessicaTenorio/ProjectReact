@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import './CardDetail.css';
+import font1 from '../../resources/font1.jpg'
 
 class CardDetail extends React.Component {
 
@@ -17,11 +18,13 @@ class CardDetail extends React.Component {
 
         return (
             <div className="CardDetail-container">
+                <img className="CardDetail-img" src={font1} alt="font1" ></img>
+                
                 <div className="CardDetail-div">
-
+                   
                     <div>
                         <div><Link to={'/character'}>
-                            <button>Go back</button>
+                            <button className="CardDetail-button">GO BACK</button>
                         </Link></div>
                         <img src={item.image} alt={item.name} width="300" height="300"></img>
                     </div>
