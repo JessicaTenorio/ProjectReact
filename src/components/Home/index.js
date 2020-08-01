@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../Container';
 import CardDetail from '../CardDetail'
 import './Home.css'
-const { Link, Route, Switch } = require("react-router-dom");
+import { Link, Route, Switch } from "react-router-dom";
 
 class Home extends React.Component {
     render(){

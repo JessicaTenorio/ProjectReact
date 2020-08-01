@@ -1,5 +1,6 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
+import './CardDetail.css';
 
 class CardDetail extends React.Component {
 
@@ -15,7 +16,10 @@ class CardDetail extends React.Component {
         const { item } = this.props.location;
 
         return (
-            <div>
+            <div className="CardDetail-div">
+                <div><Link to={'/character'}>
+                    <button>Go back</button>
+                </Link></div>
                 <p>Detail {charId}  </p>
                 <img src={item.image} alt={item.name} width="60" height="60"></img>
                 <p>Name: {item.name}</p>
