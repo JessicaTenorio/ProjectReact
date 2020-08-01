@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../resources/home.jpg'
+import './Home.css'
 
 class Home extends React.Component{
     constructor(props){
@@ -11,7 +12,7 @@ class Home extends React.Component{
     render(){        
         return(                   
             <div>               
-                <img src={logo} alt='home'></img>
+                <img className="Home-img" src={logo} alt="home" ></img>
             </div>
         );
     }
