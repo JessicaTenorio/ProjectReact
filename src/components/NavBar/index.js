@@ -15,7 +15,7 @@ class NavBar extends React.Component {
                         <Link className="NavBar-button-li-a" to="/">Home</Link>
                     </div>
                     <div className="NavBar-button-li">
-                        <Link className="NavBar-button-li-a" to="/character">Charactennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnpm startrs</Link>
+                        <Link className="NavBar-button-li-a" to="/character">Character</Link>
                     </div>
                     <div className="NavBar-button-li">
                         <Link className="NavBar-button-li-a" to={{
