@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 class CardDetail extends React.Component {
 
@@ -9,6 +10,7 @@ class CardDetail extends React.Component {
 
     render() {
 
+        if (this.props.location.item === undefined) return <Redirect to={'/'} />
         const { charId } = this.props.match.params;
         const { item } = this.props.location;
 
@@ -16,11 +18,11 @@ class CardDetail extends React.Component {
             <div>
                 <p>Detail {charId}  </p>
                 <img src={item.image} alt={item.name} width="60" height="60"></img>
-                <p>Name: {item.name}  </p>
-                <p>Status: {item.status}  </p>
-                <p>Gender: {item.gender}  </p>
-                <p>Species: {item.species}  </p>
-                <p>Location: {item.location.name}  </p>
+                <p>Name: {item.name}</p>
+                <p>Status: {item.status}</p>
+                <p>Gender: {item.gender}</p>
+                <p>Species: {item.species}</p>
+                <p>Location: {item.location.name}</p>
             </div>
         )
     };

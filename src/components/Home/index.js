@@ -1,23 +1,24 @@
 import React from 'react';
 import Container from '../Container';
 import CardDetail from '../CardDetail'
+import './Home.css'
 const { Link, Route, Switch } = require("react-router-dom");
 
 class Home extends React.Component {
     render(){
-        return (<div>
+        return (<div className="Home-button">
             <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
+                <ul className="Home-button-ul">
+                    <li className="Home-button-li">
+                        <Link className="Home-button-li-a" to="/">Home</Link>
                     </li>
-                    <li>
-                        <Link to="/character">Characters</Link>
+                    <li className="Home-button-li">
+                        <Link className="Home-button-li-a" to="/character">Charactennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnpm startrs</Link>
                     </li>
-                    <li>
-                        <Link to={{
+                    <li className="Home-button-li">
+                        <Link className="Home-button-li-a" to={{
                             pathname: '/about',
-                            name: 'Jessica'
+                            name: 'Jessica Tenorio'
                         }}>About</Link>
                     </li>                            
                 </ul>
